@@ -70,13 +70,13 @@ form input{
 .naver{
     background-color: green;
 }
-.signin{
+.sign{
     width: 40%;
     margin-top: 3rem;
     text-align: center;
     font-size: 1.2rem;
 }
-.signin a {
+.sign> a {
     color: var(--main-orange);
     text-decoration: underline;
 }

@@ -6,11 +6,11 @@ function Header() {
     <header>
       <div className="header_container">
         <div className="logo">
-          <a href=""><img src={logo} alt="우리동네아파트 로고" /></a>
+          <a href="/"><img src={logo} alt="우리동네아파트 로고" /></a>
         </div>
 
         <div className="right before">
-          <div className="login"><a>로그인</a></div>
+          <div className="login"><a href='/user/login'>로그인</a></div>
           <div className="signin"><a>회원가입</a></div>
         </div>
         
