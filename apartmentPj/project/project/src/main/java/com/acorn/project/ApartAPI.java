@@ -38,12 +38,12 @@ public class ApartAPI {
     }
     
 //  ﻿측정소별 실시간 측정정보 조회 : ﻿getMsrstnAcctoRltmMesureDnsty
-//    ﻿https://api.odcloud.kr/api/RltmArpltnInforInqireSvrc/v1/getMsrstnAcctoRltmMesureDnsty?numOfRows=1&stationName=강남구&dataTerm=DAILY&ver=1.3&serviceKey=서비스키
+//  ﻿https://api.odcloud.kr/api/RltmArpltnInforInqireSvrc/v1/getMsrstnAcctoRltmMesureDnsty?numOfRows=1&stationName=강남구&dataTerm=DAILY&ver=1.3&serviceKey=서비스키
 
-//    ﻿통합대기환경지수 나쁨 이상 측정소 목록조회 : ﻿getUnityAirEnvrnIdexSnstiveAboveMsrstnList
-//    https://api.odcloud.kr/api/RltmArpltnInforInqireSvrc/v1/getUnityAirEnvrnIdexSnstiveAboveMsrstnList?numOfRows=1&serviceKey=서비스키
+//  ﻿통합대기환경지수 나쁨 이상 측정소 목록조회 : ﻿getUnityAirEnvrnIdexSnstiveAboveMsrstnList
+//  https://api.odcloud.kr/api/RltmArpltnInforInqireSvrc/v1/getUnityAirEnvrnIdexSnstiveAboveMsrstnList?numOfRows=1&serviceKey=서비스키
 
-    //    ﻿시도별 실시간 측정정보 조회 : ﻿getCtprvnRltmMesureDnsty
-//  	﻿https://api.odcloud.kr/api/RltmArpltnInforInqireSvrc/v1/getCtprvnRltmMesureDnsty?numOfRows=1&sidoName=서울&serviceKey=서비스키
+  //    ﻿시도별 실시간 측정정보 조회 : ﻿getCtprvnRltmMesureDnsty
+//	﻿https://api.odcloud.kr/api/RltmArpltnInforInqireSvrc/v1/getCtprvnRltmMesureDnsty?numOfRows=1&sidoName=서울&serviceKey=서비스키
 
 }
