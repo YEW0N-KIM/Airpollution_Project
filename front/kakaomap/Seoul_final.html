@@ -45,31 +45,35 @@
         path: []
     }];
 
-    // JSON 파일 읽기 및 처리
     fetch('korea_b2.json')
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            return response.json();
-        })
-        .then(jsonData => {
-            const features = jsonData.features;
-            const sido = features.find(feature => feature.properties.CTP_ENG_NM === "Seoul");
-            const coordinates = sido.geometry.coordinates;
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.json();
+    })
+    .then(jsonData => {
+        const features = jsonData.features;
+        
+        // 서울의 데이터 가져오기
+        const sido = features.find(feature => feature.properties.CTP_ENG_NM === "Seoul");
+        const coordinates = sido.geometry.coordinates;
 
-            // 좌표 변환 및 다각형 생성
-            coordinates.forEach(polygonCoordinates => {
-                const path = polygonCoordinates[0].map(coord => new kakao.maps.LatLng(coord[1], coord[0]));
-                areas[0].path.push(path);
-            });
-
-            // 지도에 다각형 표시 함수 호출
-            displayArea(areas[0]);
-        })
-        .catch(error => {
-            console.error('Error fetching JSON:', error);
+ 
+    
+        // 서울의 좌표가 중첩된 배열일 경우
+        coordinates.forEach(polygonCoordinates => {
+            const path = polygonCoordinates.map(coord => new kakao.maps.LatLng(coord[1], coord[0]));
+            areas[0].path.push(path);
         });
+    
+        // 지도에 다각형 표시 함수 호출
+        displayArea(areas[0]);
+    })
+    .catch(error => {
+        console.error('Error fetching JSON:', error);
+    });
+
 
     // 다각형 표시 함수
     function displayArea(area) {
