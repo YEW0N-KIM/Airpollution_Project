@@ -1,7 +1,7 @@
 import Header from '../component/Header';
-import '../css/Signin.css'
+import '../css/Signup.css'
 
-function Signin(){
+function Signup(){
     return(
         <div className="page">
         <Header/>
@@ -14,22 +14,27 @@ function Signin(){
         
             <form action="">
               <div className="ess_info">
+                
                 <div className="ess_header">
                   <div className="ess_title">필수 입력정보</div>
                   <div className="ess_content">필수 항목이므로 반드시 입력해주시길 바랍니다.</div>
                 </div>
+
                 <div className="ess_idform">
                   <div className="ess_id">
                     <div className='ess_idName'>아이디</div> 
                     <div className='ess_idInput'>
-                        <input type="text" placeholder='아이디'/>
+                        <input type="text" pclelaceholder='아이디'/>
                         <button> 중복확인 </button>
                     </div>
                   </div>
                   
                   <div className="ess_pw">
-                    비밀번호 <input type="text" placeholder='비밀번호'/>
-                    <input type="text" placeholder='비밀번호 확인'/>                
+                    <div className='ess_pwName'>비밀번호</div> 
+                      <div className='ess_idInput'>
+                        <input type="text" placeholder='비밀번호'/>
+                        <input type="text" placeholder='비밀번호 확인'/>         
+                      </div>    
                   </div>
                 </div>
   
@@ -69,5 +74,5 @@ function Signin(){
     );
 }
 
-export default Signin;
+export default Signup;
 

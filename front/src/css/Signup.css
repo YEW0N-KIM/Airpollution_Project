@@ -1,5 +1,5 @@
 .signin_container{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 100rem;
     margin-top: 5rem;
 }
@@ -24,12 +24,21 @@
 }
 
 .ess_idform{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin-top: 2rem;
 }
-.ess_idform .ess_id{
+.ess_idform .ess_id, .ess_pw{
     font-size: 1.4rem;
     font-weight: 600;
+    color: var(--dark-gray);
     display: flex;
     justify-content: space-between;
+}
+
+.ess_idName, .ess_pwName{
+    margin-left: 2rem;
+}
+
+.ess_idInput> input, .ess_pwInput>input {
+    border: 1px solid black;    
 }

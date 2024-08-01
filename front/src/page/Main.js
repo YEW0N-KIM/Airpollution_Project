@@ -1,16 +1,12 @@
-import '../css/Login.css';
-
 import Header from '../component/Header';
 
-
-
-function Login() {
+function Main() {
   return (
     <div className="page">
       <Header/>
     </div>
 
-  );
+  )
 }
 
-export default Login;
+export default Main;
