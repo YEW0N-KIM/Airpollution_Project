@@ -1,0 +1,125 @@
+/* 기본 세팅 */
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+    font-family: 'Pretendard-Regular';
+}
+html{
+    font-size: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+:root{
+    --main-brown: #634b37;
+    --main-orange: #fe9f27;
+    --dark-gray:  rgb(70, 70, 70);
+}
+
+/* 폴리곤 부분 */
+.area {
+    position: absolute;
+    background: #fff;
+    border: 1px solid #888;
+    border-radius: 3px;
+    font-size: 12px;
+    top: -5px;
+    left: 15px;
+    padding: 2px;
+}
+
+.main_container{
+    /* border: 1px solid black; */
+    display: flex;
+}
+
+#map{
+ width: 70%; height: 100vh;
+}
+
+
+/* 대기정보 */
+.air_info{
+    width: 30%; height: 100vh;
+    background-color: #f1f1f1e9;
+    border-radius: 0.5rem;
+    /* border: 1px solid black; */
+}
+
+.air_info_title{
+    font-size: 3rem;
+    margin-left: 3rem;
+    margin-top: 2rem;
+    color: var(--main-brown);
+}
+.stationName{
+    margin: 1rem auto;
+    margin-left: 2.5rem;
+}
+
+
+.air_info_detail{
+    margin: 0 auto;
+    width: 85%;
+    /* border: 1px solid black; */
+    background-color: rgba(255, 255, 255, 0.719);
+    border-radius: 0.5rem;
+    padding: 2rem;
+    box-shadow: 0px 0px 0.5rem #888;
+}
+
+.detail_title{
+    font-size: 1.8rem;
+    color: var(--dark-gray);
+}
+.interGrade{
+    /* border: 1px solid black; */
+    width: 10rem;
+}
+.stationInfo{
+    margin: 0.5rem auto;
+    text-align: center;
+}
+.date{
+    text-align: center;
+}
+.detail_info{
+    font-size: 1.2rem;
+}
+.info_gallery1, .info_gallery2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+.gallery_box{
+    width: 10rem;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+}
+.gallery_box .title{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+.so2Grade, .coGrade, .o3Grade, .no2Grade, .pm10Grade, .pm25Grade{
+    margin-bottom: 0.3rem;
+}
+hr{
+    margin: 3.5rem auto ;
+    width: 35rem; 
+    border: 0;
+    height: 0.1rem;
+    background-color: #d9d9d9;
+}
