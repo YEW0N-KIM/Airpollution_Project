@@ -56,67 +56,67 @@
                     <div class="date detail_info"> ${list.dataTime }</div>
                     
                     <div class="info_gallery1">
-                        <div class="so2value_container gallery_box"> 
+                        <div class="gallery_box"> 
                             <div class="so2 title">아황산가스</div>
                             <c:choose>
                             	<c:when test="${list.so2Grade eq '1' }">
-                            		<div class="so2Grade">좋음</div>
+                            		<div class="grade" style="color:#30a2ff" >좋음</div>
                             	</c:when>
                             	<c:when test="${list.so2Grade eq '2' }">
-                            		<div class="so2Grade">보통</div>
+                            		<div class="grade" style="color:#03c73c">보통</div>
                             	</c:when>
                             	<c:when test="${list.so2Grade eq '3' }">
-                            		<div class="so2Grade">나쁨</div>
+                            		<div class="grade" style="color:#fda60d">나쁨</div>
                             	</c:when>
                             	<c:when test="${list.so2Grade eq '4' }">
-                            		<div class="so2Grade">매우 나쁨</div>
+                            		<div class="grade" style="color:#e64746">매우 나쁨</div>
                             	</c:when>
                             	<c:otherwise>
-                            		<div class="pm25Grade">측정 불가</div>
+                            		<div class="grade">측정 불가</div>
                             	</c:otherwise>
                             </c:choose>
                             <div class="so2Value">${list.so2Value}</div>
                         </div>
                         
-                        <div class="coValue_container gallery_box"> 
-                            <div class="co title">일산화탄소</div>
+                        <div class="gallery_box"> 
+                            <div class="title">일산화탄소</div>
                             <c:choose>
                             	<c:when test="${list.coGrade eq '1' }">
-                            		<div class="coGrade">좋음</div>
+                            		<div class="grade" style="color:#30a2ff">좋음</div>
                             	</c:when>
                             	<c:when test="${list.coGrade eq '2' }">
-                            		<div class="coGrade">보통</div>
+                            		<div class="grade" style="color:#03c73c" >보통</div>
                             	</c:when>
                             	<c:when test="${list.coGrade eq '3' }">
-                            		<div class="coGrade">나쁨</div>
+                            		<div class="grade" style="color:#fda60d">나쁨</div>
                             	</c:when>
                             	<c:when test="${list.coGrade eq '4' }">
-                            		<div class="coGrade">매우 나쁨</div>
+                            		<div class="grade" style="color:#e64746">매우 나쁨</div>
                             	</c:when>
                             	<c:otherwise>
-                            		<div class="pm25Grade">측정 불가</div>
+                            		<div class=grade>측정 불가</div>
                             	</c:otherwise>
                             </c:choose>
                             <div class="coValue">${list.coValue}</div>
                         </div>
 
-                        <div class="o3Value_container gallery_box"> 
-                            <div class="o3 title">오존</div>
+                        <div class="gallery_box"> 
+                            <div class="title">오존</div>
                              <c:choose>
                             	<c:when test="${list.o3Grade eq '1' }">
-                            		<div class="o3Grade">좋음</div>
+                            		<div class="grade" style="color:#30a2ff">좋음</div>
                             	</c:when>
                             	<c:when test="${list.o3Grade eq '2' }">
-                            		<div class="o3Grade">보통</div>
+                            		<div class="grade" style="color:#03c73c">보통</div>
                             	</c:when>
                             	<c:when test="${list.o3Grade eq '3' }">
-                            		<div class="o3Grade">나쁨</div>
+                            		<div class="grade" style="color:#fda60d">나쁨</div>
                             	</c:when>
                             	<c:when test="${list.o3Grade eq '4' }">
-                            		<div class="o3Grade">매우 나쁨</div>
+                            		<div class="grade"style="color:#e64746" >매우 나쁨</div>
                             	</c:when>
                             	<c:otherwise>
-                            		<div class="pm25Grade">측정 불가</div>
+                            		<div class="grade">측정 불가</div>
                             	</c:otherwise>
                             </c:choose>
                             <div class="o3Value">${list.o3Value}</div>
@@ -124,67 +124,67 @@
                     </div>
                     
                     <div class="info_gallery2">
-                        <div class="no2Value_container gallery_box"> 
-                            <div class="no2 title">이산화질소</div>
+                        <div class="gallery_box"> 
+                            <div class="title">이산화질소</div>
                             <c:choose>
                             	<c:when test="${list.no2Grade eq '1' }">
-                            		<div class="no2Grade">좋음</div>
+                            		<div class="grade" style="color:#30a2ff">좋음</div>
                             	</c:when>
                             	<c:when test="${list.no2Grade eq '2' }">
-                            		<div class="no2Grade">보통</div>
+                            		<div class="grade" style="color:#03c73c">보통</div>
                             	</c:when>
                             	<c:when test="${list.no2Grade eq '3' }">
-                            		<div class="no2Grade">나쁨</div>
+                            		<div class="grade" style="color:#fda60d">나쁨</div>
                             	</c:when>
                             	<c:when test="${list.no2Grade eq '4' }">
-                            		<div class="no2Grade">매우 나쁨</div>
+                            		<div class="grade" style="color:#e64746">매우 나쁨</div>
                             	</c:when>
                             	<c:otherwise>
-                            		<div class="pm25Grade">측정 불가</div>
+                            		<div class="grade">측정 불가</div>
                             	</c:otherwise>
                             </c:choose>
                             <div class="no2Value">${list.no2Value}</div>
                         </div>
 
-                        <div class="pm10Value_container gallery_box"> 
-                            <div class="pm10 title">미세먼지</div>
+                        <div class="gallery_box"> 
+                            <div class="title">미세먼지</div>
                              <c:choose>
                             	<c:when test="${list.pm10Grade eq '1' }">
-                            		<div class="pm10Grade">좋음</div>
+                            		<div class="grade" style="color:#30a2ff">좋음</div>
                             	</c:when>
                             	<c:when test="${list.pm10Grade eq '2' }">
-                            		<div class="pm10Grade">보통</div>
+                            		<div class="grade" style="color:#03c73c">보통</div>
                             	</c:when>
                             	<c:when test="${list.pm10Grade eq '3' }">
-                            		<div class="pm10Grade">나쁨</div>
+                            		<div class="grade" style="color:#fda60d">나쁨</div>
                             	</c:when>
                             	<c:when test="${list.pm10Grade eq '4' }">
-                            		<div class="pm10Grade">매우 나쁨</div>
+                            		<div class="grade" style="color:#e64746">매우 나쁨</div>
                             	</c:when>
                             	<c:otherwise>
-                            		<div class="pm25Grade">측정 불가</div>
+                            		<div class="grade">측정 불가</div>
                             	</c:otherwise>
                             </c:choose>
                             <div class="pm10Value">${list.pm10Value}</div>
                         </div>
 
-                        <div class="pm25Value_container gallery_box"> 
+                        <div class="gallery_box"> 
                             <div class="pm25 title">초미세먼지</div>
                             <c:choose>
                             	<c:when test="${list.pm25Grade eq '1' }">
-                            		<div class="pm25Grade">좋음</div>
+                            		<div class="grade" style="color:#30a2ff">좋음</div>
                             	</c:when>
                             	<c:when test="${list.pm25Grade eq '2' }">
-                            		<div class="pm25Grade">보통</div>
+                            		<div class="grade" style="color:#03c73c">보통</div>
                             	</c:when>
                             	<c:when test="${list.pm25Grade eq '3' }">
-                            		<div class="pm25Grade">나쁨</div>
+                            		<div class="grade" style="color:#fda60d">나쁨</div>
                             	</c:when>
                             	<c:when test="${list.pm25Grade eq '4' }">
-                            		<div class="pm25Grade">매우 나쁨</div>
+                            		<div class="grade" style="color:#e64746">매우 나쁨</div>
                             	</c:when>
                             	<c:otherwise>
-                            		<div class="pm25Grade">측정 불가</div>
+                            		<div class="grade">측정 불가</div>
                             	</c:otherwise>
                             </c:choose>
                             <div class="pm25Value">${list.pm25Value}</div>

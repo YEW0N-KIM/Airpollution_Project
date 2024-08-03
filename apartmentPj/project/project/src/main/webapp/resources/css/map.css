@@ -110,12 +110,12 @@ a{
     padding: 0.5rem;
 }
 .gallery_box .title{
-    font-size: 1.2rem;
-    font-weight: 600;
+    font-size: 1.3rem;
     margin-bottom: 0.5rem;
 }
-.so2Grade, .coGrade, .o3Grade, .no2Grade, .pm10Grade, .pm25Grade{
+.grade{
     margin-bottom: 0.3rem;
+    font-weight:bold; font-size:1.2rem;
 }
 hr{
     margin: 3.5rem auto ;

@@ -1,8 +1,8 @@
 
 var mapContainer = document.getElementById('map');
 var mapOption = {
-    center: new kakao.maps.LatLng(35.1798200522868, 129.075087492149),
-    level: 13
+    center: new kakao.maps.LatLng(37.566667, 126.978056),
+    level: 5
 };
 
 var map = new kakao.maps.Map(mapContainer, mapOption);
@@ -15,54 +15,105 @@ document.addEventListener('DOMContentLoaded', function() {
    switch (title_sido){
     case "서울":
         region ="11";
+        mapOption.center = new kakao.maps.LatLng(37.566667, 126.978056);
+        map.setCenter(mapOption.center); 
+        map.setLevel(11);
         break;
     case "대구":
         region="27";
+        mapOption.center = new kakao.maps.LatLng(35.871389, 128.601389);
+        map.setCenter(mapOption.center); 
+        map.setLevel(11);
         break;
     case "광주":
         region ="29";
+        mapOption.center = new kakao.maps.LatLng(35.159444, 126.8525);
+        map.setCenter(mapOption.center); 
+        map.setLevel(11);
         break;
     case "대전":
         region ="30";
+        mapOption.center = new kakao.maps.LatLng(36.350833, 127.385);
+        map.setCenter(mapOption.center); 
+        map.setLevel(11);
         break;
     case "울산":
         region ="31";
+        mapOption.center = new kakao.maps.LatLng(35.538333, 129.311389);
+        map.setCenter(mapOption.center); 
+        map.setLevel(11);
         break;
     case "세종":
         region ="36";
+        mapOption.center = new kakao.maps.LatLng(36.480556, 127.288889);
+        map.setCenter(mapOption.center); 
+        map.setLevel(11);
         break;
     case "충북":
         region ="43";
+        mapOption.center = new kakao.maps.LatLng(36.8, 127.7);
+        map.setCenter(mapOption.center); 
+        map.setLevel(11);
         break;
     case "강원":
         region ="51";
+        mapOption.center = new kakao.maps.LatLng(37.8228, 128.1555);
+        map.setCenter(mapOption.center); 
+        map.setLevel(11);
         break;
     case "부산":
         region ="26";
+        mapOption.center = new kakao.maps.LatLng(35.1798200522868, 129.075087492149);
+        map.setCenter(mapOption.center); 
+        map.setLevel(11);
         break;
     case "인천":
         region ="28";
+        mapOption.center = new kakao.maps.LatLng(37.4562557, 126.7052062);
+        map.setCenter(mapOption.center); 
+        map.setLevel(11);
         break;
     case "경기":
-        region ="41";
+        region ="41"; //37° 30′ 동경 127° 15′
+        mapOption.center = new kakao.maps.LatLng(37.30, 127.15);
+        map.setCenter(mapOption.center); 
+        map.setLevel(11);
         break;
     case "충남":
         region ="44";
+        mapOption.center = new kakao.maps.LatLng(36.5184, 126.8);
+        map.setCenter(mapOption.center); 
+        map.setLevel(11);
         break;
     case "전북":
         region ="45";
+        mapOption.center = new kakao.maps.LatLng(35.7175, 127.153);
+        map.setCenter(mapOption.center); 
+        map.setLevel(11);
         break;
     case "전남":
         region ="46";
+        mapOption.center = new kakao.maps.LatLng(34.8679, 126.991);
+        map.setCenter(mapOption.center); 
+        map.setLevel(11);
         break;
     case "경북":
         region ="47";
+        mapOption.center = new kakao.maps.LatLng(36.4919, 128.8889);
+        map.setCenter(mapOption.center); 
+        map.setLevel(11);
         break;
     case "경남":
         region ="48";
+        mapOption.center = new kakao.maps.LatLng(35.4606, 128.2132);
+        map.setCenter(mapOption.center); 
+        map.setLevel(11);
         break;
     case "제주도":
         region ="50";
+        mapOption.center = new kakao.maps.LatLng(33.4890113, 126.4983023);
+        map.setCenter(mapOption.center); 
+        map.setLevel(11);
         break;
 }
     
@@ -148,3 +199,11 @@ function displayArea(area) {
         customOverlay.setMap(null);
     });
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    title_sido = document.getElementsByClassName(".so2Grade").textContent;
+    switch (so2Grade) {
+        case 1 :
+            this.styleSheets
+    }
+ });
