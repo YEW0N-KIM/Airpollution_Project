@@ -97,6 +97,7 @@ public class ApiController {
         
        
         model.addAttribute("airList", airList);
+        model.addAttribute("sido", sido);
        
         
         

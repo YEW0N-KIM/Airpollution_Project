@@ -10,9 +10,69 @@ var mapOption = {
 
 var map = new kakao.maps.Map(mapContainer, mapOption);
 var customOverlay = new kakao.maps.CustomOverlay({});
+let title_sido ="";
+let region ="";
+document.addEventListener('DOMContentLoaded', function() {
+   title_sido = document.getElementById("title_sido").textContent;
+  
+   switch (title_sido){
+    case "서울":
+        region ="11";
+        break;
+    case "대구":
+        region="27";
+        break;
+    case "광주":
+        region ="29";
+        break;
+    case "대전":
+        region ="30";
+        break;
+    case "울산":
+        region ="31";
+        break;
+    case "세종":
+        region ="36";
+        break;
+    case "충북":
+        region ="43";
+        break;
+    case "강원":
+        region ="51";
+        break;
+    case "부산":
+        region ="26";
+        break;
+    case "인천":
+        region ="28";
+        break;
+    case "경기":
+        region ="41";
+        break;
+    case "충남":
+        region ="44";
+        break;
+    case "전북":
+        region ="45";
+        break;
+    case "전남":
+        region ="46";
+        break;
+    case "경북":
+        region ="47";
+        break;
+    case "경남":
+        region ="48";
+        break;
+    case "제주도":
+        region ="50";
+        break;
+}
+    
+});
 
 const areas = [{
-    name: '부산',
+    name: title_sido,
     path: []
 }];
 
@@ -26,10 +86,10 @@ fetch('/project/resources/js/korea_b2.json')
 .then(jsonData => {
     const features = jsonData.features;
     
+    
     // 지역의 데이터 가져오기
     // 서울 11, 대구 27, 광주 29, 대전 30, 울산 31, 세종시 36, 충청북도 43, 강원도 51
     // 부산 26, 인천 28, 경기도 41, 충청남도 44, 전라북도 45, 전라남도 46, 경상북도 47, 경상남도 48, 제주도 50
-    const region = "11";
     const sido = features.find(feature => feature.properties.CTPRVN_CD === region);
     const coordinates = sido.geometry.coordinates;
 
